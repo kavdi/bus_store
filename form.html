@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bus Mall Order From</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bus Mall Order Form</h1>
+      <h3>Complete your order by filling out the form below. All fields are requried in order to submit your order.</h3>
+    </header>
+    <div id='form_area'>
+      <form id='form'>
+        <table id='order'>
+          <tr>
+            <td><label for="name">Full Name:</label></td>
+            <td><input type="text" name="name" class="field" placeholder="Enter your name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="street">Street Address:</label></td>
+            <td><input type="text" name="street" class="field" placeholder="Enter your street address" required /></td>
+          </tr>
+          <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" name="city" class="field" placeholder="Enter your city" required /></td>
+          </tr>
+          <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" name="state" class="field" placeholder="Enter your state" required /></td>
+          </tr>
+          <tr>
+            <td><label for="zip">Zip Code:</label></td>
+            <td><input type="text" name="zip" class="field" placeholder="Enter your zip code" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="text" name="phone" class="field" placeholder="xxx-xxx-xxxx" required /></td>
+          </tr>
+          <tr>
+            <td><label for="cc">Credit Card Number:</label></td>
+            <td><input type="number" name="cc" class="field" placeholder="Enter your CC number" required /></td>
+          </tr>
+          <tr>
+            <td><label for="product">Choose Product:</label></td>
+            <td>
+              <select>
+                <option value="bag">Bag</option>
+                <option value="banana">Banana</option>
+                <option value="bathroom">Bathroom</option>
+                <option value="boots">Boots</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="bubblegum">Bubblegum</option>
+                <option value="chair">Chair</option>
+                <option value="cthulhu">Cthulhu</option>
+                <option value="dogduck">Dog-duck</option>
+                <option value="dragon">Dragon</option>
+                <option value="pen">Pen</option>
+                <option value="petsweep">Pet-sweep</option>
+                <option value="scissors">Scissors</option>
+                <option value="shark">Shark</option>
+                <option value="sweep">Sweep</option>
+                <option value="tauntaun">Tauntaun</option>
+                <option value="unicorn">Unicorn</option>
+                <option value="usb">USB</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="qty">Quantity:</label></td>
+            <td><input type="number" name="qty" class="field" placeholder="Quantity" required /></td>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
