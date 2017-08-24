@@ -1,5 +1,7 @@
 'use strict';
 
+var allOrders = [];
+
 function Order(name, street, city, state, zip, phone, cc, product, qty) {
   this.name = name;
   this.street = street;
@@ -21,11 +23,12 @@ function submitOrder(event) {
   var zip = form.elements['zip'].value;
   var phone = form.elements['phone'].value;
   var cc = form.elements['cc'].value;
-  var product = form.elements['product'].value;
+  var product = form.elements[7].value;
   var qty = form.elements['qty'].value;
   var newEntry = new Order(name, street, city, state, zip, phone, cc, product, qty);
+  allOrders.push(newEntry);
   form.reset();
 };
 
 var form = document.getElementById('form');
-form.addEventListener('subimt', submitOrder);
+form.addEventListener('submit', submitOrder);
