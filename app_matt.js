@@ -11,7 +11,7 @@ function Order(name, street, city, state, zip, phone, cc, product, qty) {
   this.phone = phone;
   this.cc = cc;
   this.product = product;
-  this.qty;
+  this.qty = qty;
 };
 
 function submitOrder(event) {
@@ -27,6 +27,7 @@ function submitOrder(event) {
   var qty = form.elements['qty'].value;
   var newEntry = new Order(name, street, city, state, zip, phone, cc, product, qty);
   allOrders.push(newEntry);
+  localStorage.setItem('orders', JSON.stringify(allOrders));
   form.reset();
 };
 
