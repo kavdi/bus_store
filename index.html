@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bust store</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Bus Mall Order
+    </h1>
+    <hr/>
+    <div>
+      <div class = "imageContainer">
+        <div class = "flLeft"><img src = "img/bag.jpg" class = "imageSize"/><p>Bag</p></div>
+        <div class = "flClearLeft"><img src = "img/banana.jpg" class = "imageSize"/><p>Banana</p></div>
+        <div class = "flClearLeft"><img src = "img/bathroom.jpg" class = "imageSize"/><p>Bathroom</p></div>
+        <div class = "flClearLeft"><img src = "img/boots.jpg" class = "imageSize"/><p>Boots</p></div>
+        <div class = "flLeft"><img src = "img/breakfast.jpg" class = "imageSize"/><p>Breakfast</p></div>
+        <div class = "flClearLeft"><img src = "img/bubblegum.jpg" class = "imageSize"/><p>Bubblegum</p></div>
+        <div class = "flClearLeft"><img src = "img/chair.jpg" class = "imageSize"/><p>Chair</p></div>
+        <div class = "flClearLeft"><img src = "img/cthulhu.jpg" class = "imageSize"/><p>Cthulhu</p></div>
+        <div class = "flLeft"><img src = "img/dog-duck.jpg" class = "imageSize"/><p>Dog Duck</p></div>
+        <div class = "flClearLeft"><img src = "img/dragon.jpg" class = "imageSize"/><p>Dragon</p></div>
+        <div class = "flClearLeft"><img src = "img/pen.jpg" class = "imageSize"/><p>Pen</p></div>
+        <div class = "flClearLeft"><img src = "img/pet-sweep.jpg" class = "imageSize"/><p>Pet Sweep</p></div>
+        <div class = "flLeft"><img src = "img/scissors.jpg" class = "imageSize"/><p>Scissors</p></div>
+        <div class = "flClearLeft"><img src = "img/shark.jpg" class = "imageSize"/><p>Shark</p></div>
+        <div class = "flClearLeft"><img src = "img/sweep.png" class = "imageSize"/><p>Sweep</p></div>
+        <div class = "flClearLeft"><img src = "img/tauntaun.jpg" class = "imageSize"/><p>Tauntaun</p></div>
+        <div class = "flLeft"><img src = "img/unicorn.jpg" class = "imageSize"/><p>Unicorn</p></div>
+        <div class = "flClearLeft"><img src = "img/usb.gif" class = "imageSize"/><p>USB</p></div>
+        <div class = "flClearLeft"><img src = "img/water-can.jpg" class = "imageSize"/><p>Water Can</p></div>
+        <div class = "flClearLeft"><img src = "img/wine-glass.jpg" class = "imageSize"/><p>Wine Glass</p></div>
+      </div>
+    </div>
+    <div id='form_area'>
+      <form id='form'>
+        <table id='order'>
+          <tr>
+            <td><label for="name">Full Name:</label></td>
+            <td><input type="text" name="name" class="field" placeholder="Enter your name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="street">Street Address:</label></td>
+            <td><input type="text" name="street" class="field" placeholder="Enter your street address" required /></td>
+          </tr>
+          <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" name="city" class="field" placeholder="Enter your city" required /></td>
+          </tr>
+          <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" name="state" class="field" placeholder="Enter your state" required /></td>
+          </tr>
+          <tr>
+            <td><label for="zip">Zip Code:</label></td>
+            <td><input type="text" name="zip" class="field" placeholder="Enter your zip code" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="text" name="phone" class="field" placeholder="xxx-xxx-xxxx" required /></td>
+          </tr>
+          <tr>
+            <td><label for="cc">16 Digit Credit Card Number:</label></td>
+            <td><input type="text" name="cc" class="field" placeholder="Enter your CC number" required pattern= "[0-9]{16}"/></td>
+          </tr>
+          <tr>
+            <td><label for="product">Choose Product:</label></td>
+            <td>
+              <select>
+                <option value="bag">Bag</option>
+                <option value="banana">Banana</option>
+                <option value="bathroom">Bathroom</option>
+                <option value="boots">Boots</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="bubblegum">Bubblegum</option>
+                <option value="chair">Chair</option>
+                <option value="cthulhu">Cthulhu</option>
+                <option value="dogduck">Dog-duck</option>
+                <option value="dragon">Dragon</option>
+                <option value="pen">Pen</option>
+                <option value="petsweep">Pet-sweep</option>
+                <option value="scissors">Scissors</option>
+                <option value="shark">Shark</option>
+                <option value="sweep">Sweep</option>
+                <option value="tauntaun">Tauntaun</option>
+                <option value="unicorn">Unicorn</option>
+                <option value="usb">USB</option>
+                <option value="water-can">Water Can</option>
+                <option value="wine-glass">Wine Glass</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="qty">Quantity:</label></td>
+            <td><input type="number" name="qty" class="field" placeholder="Quantity" required /></td>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2>
+              <input type="submit" value="Submit Order" id="submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+  <script src="app.js" charset="utf-8">
+  </script>
+</html>

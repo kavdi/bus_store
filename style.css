@@ -1,0 +1,38 @@
+.imageContainer {
+width: 45%;
+float:left;
+}
+.flLeft {
+clear:both;
+float:left;
+width: 120px;
+height: 140px;
+border: 1px solid black;
+margin-bottom: 2%
+}
+.flClearLeft {
+float:left;
+width: 120px;
+height: 140px;
+margin-left: 2%;
+margin-bottom: 2%;
+border: 1px solid black;
+}
+.imageSize {
+  width: 120px;
+  height: 120px;
+  margin: 0%;
+}
+p {
+  text-align: center;
+}
+#form_area {
+  width: 55%;
+  float: right;
+}
+#order {
+  width: 100%;
+}
+tr {
+  width: 50%;
+}
