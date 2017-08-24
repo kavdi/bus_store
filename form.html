@@ -37,8 +37,8 @@
             <td><input type="text" name="phone" class="field" placeholder="xxx-xxx-xxxx" required /></td>
           </tr>
           <tr>
-            <td><label for="cc">Credit Card Number:</label></td>
-            <td><input type="number" name="cc" class="field" placeholder="Enter your CC number" required /></td>
+            <td><label for="cc">16 Digit Credit Card Number:</label></td>
+            <td><input type="text" name="cc" class="field" placeholder="Enter your CC number" required pattern= "[0-9]{16}"/></td>
           </tr>
           <tr>
             <td><label for="product">Choose Product:</label></td>
@@ -68,6 +68,11 @@
           <tr>
             <td><label for="qty">Quantity:</label></td>
             <td><input type="number" name="qty" class="field" placeholder="Quantity" required /></td>
+            </td>
+          </tr>
+          <tr>
+            <td colspan=2>
+              <input type="submit" value="Submit Order" id="submit" />
             </td>
           </tr>
         </table>
