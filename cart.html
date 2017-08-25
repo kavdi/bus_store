@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>These are the items in your cart: </h1>
+      <div class="shoppingCart">
+        <div class="cartTable">
+          <table>
+            <thead>
+              <th>Item</th>
+              <th>Item Description</th>
+              <th>QTY</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="tblBody">
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><button id="continueButton" type="submit" name="return">Continue Shopping</button></td>
+                <td colspan= 2></td>
+                <td><button id="checkoutButton" type="submit" name="purchase">Checkout</button></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src ="cart.js"></script>
+</html>
