@@ -1,38 +1,73 @@
 .imageContainer {
 width: 45%;
+height: 750px;
 float:left;
 }
 .flLeft {
 clear:both;
 float:left;
 width: 120px;
-height: 140px;
-border: 1px solid black;
-margin-bottom: 2%
+height: 120px;
+border: 2px solid black;
+margin-bottom: 4%
 }
 .flClearLeft {
 float:left;
 width: 120px;
-height: 140px;
-margin-left: 2%;
-margin-bottom: 2%;
-border: 1px solid black;
+height: 120px;
+margin-left: 4%;
+margin-bottom: 4%;
+border: 2px solid black;
 }
 .imageSize {
-  width: 120px;
-  height: 120px;
-  margin: 0%;
+width: 120px;
+height: 120px;
+margin: 0%;
 }
 p {
-  text-align: center;
+text-align: center;
+margin-top: 0%;
 }
 #form_area {
-  width: 55%;
-  float: right;
+width: 54.5%;
+float: right;
+background-color: lightgrey;
+border: 2px solid black;
 }
 #order {
-  width: 100%;
+width: 100%;
 }
 tr {
-  width: 50%;
+width: 50%;
+}
+.clearfix {
+clear:both;
+}
+.titleName {
+text-align: center;
+text-decoration: underline;
+}
+.instructions {
+margin-left: 1%;
+}
+.cartBtn {
+text-decoration: none;
+color: black;
+border: 2px solid lightblue;
+border-radius: 20%;
+padding: 50px;
+float:right;
+margin-right: 23%;
+font-size: 30px;
+}
+.cartBtn:hover {
+text-decoration: none;
+color: white;
+border: 2px solid lightblue;
+background-color: lightblue;
+border-radius: 20%;
+padding: 50px;
+float:right;
+margin-right: 23%;
+font-size: 30px;
 }
