@@ -27,9 +27,16 @@ function addToCart(object){
   console.log(rowCount);
   var tableBody = document.getElementById('tblBody');
   var newRow = createAndAppend('tr', tableBody, '','',rowCount);
-  var image = createAndAppend('td', newRow);
-  console.log(image);
-  image.setAttribute('src', 'img/' + object.product + '.jpg');
+  var imageBlock = createAndAppend('td', newRow);
+  var image = createAndAppend('img', imageBlock);
+  if (object.product.includes('usb')) {
+    image.setAttribute('src', 'img/' + object.product + '.gif');
+  } else if (object.product.includes('sweep')){
+    image.setAttribute('src', 'img/' + object.product + '.png');
+  } else {
+    image.setAttribute('src', 'img/' + object.product + '.jpg');
+  }
+  console.log(imageBlock);
   createAndAppend('td', newRow, object.product);
   createAndAppend('td', newRow, object.qty);
   var deleteButton = createAndAppend('td',newRow, '', '');
