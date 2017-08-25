@@ -1,6 +1,9 @@
 
 var yourOrders = JSON.parse(localStorage.getItem('orders'));
 
+for (var a = 0; a < yourOrders.length; a++){
+  addToCart(yourOrders[a]);
+}
 
 function createAndAppend(tag, parentVar, content, itsClass, itsId) {
   var newElement = document.createElement(tag);
@@ -17,16 +20,15 @@ function createAndAppend(tag, parentVar, content, itsClass, itsId) {
   return newElement;
 }
 
-////////////////
-////////////////
 var rowCount = 0;
-function addToCart(){
+function addToCart(object){
   rowCount++;
   var tableBody = document.getElementById('tblBody');
   var newRow = createAndAppend('tr', tableBody, '','',rowCount);
-  for (var i = 0; i < 3; i++){
-    createAndAppend('td', newRow, 'row' + rowCount);
-  }
+  var image = createAndAppend('td', newRow);
+  image.setAttribute('src', 'img/' + object.product + '.jpg');
+  createAndAppend('td', newRow, object.product);
+  createAndAppend('td', newRow, object.qty);
   var deleteButton = createAndAppend('td',newRow, '', '');
   deleteButton.innerHTML = '<button id="deleteButton' + rowCount + '"  >Delete</button>';
   deleteButton.addEventListener('click', removeRow);
@@ -34,8 +36,6 @@ function addToCart(){
 addToCart();
 addToCart();
 
-////////////////Event Listeners
-/////////////////
 var continueButton = document.getElementById('continueButton');
 continueButton.addEventListener('click',shoppingPage);
 
@@ -57,10 +57,5 @@ function createDeleteEvent(){
 }
 function removeRow(event) {
   var row = document.getElementById(event.target.id.slice(-1));
-  // debugger;
   row.parentNode.removeChild(row);
 }
-
-//
-// var element = document.getElementById("element-id");
-// element.parentNode.removeChild(element);
