@@ -1,6 +1,10 @@
 'use strict';
 
-var allOrders = [];
+if (localStorage.getItem('orders')) {
+  var allOrders = JSON.parse(localStorage.getItem('orders'));
+} else {
+  var allOrders = [];
+};
 
 function Order(name, street, city, state, zip, phone, cc, product, qty) {
   this.name = name;

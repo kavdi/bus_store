@@ -1,5 +1,6 @@
 'use strict';
 
+var rowCount = 0;
 var yourOrders = JSON.parse(localStorage.getItem('orders'));
 
 for (var a = 0; a < yourOrders.length; a++){
@@ -21,21 +22,20 @@ function createAndAppend(tag, parentVar, content, itsClass, itsId) {
   return newElement;
 }
 
-var rowCount = 0;
 function addToCart(object){
   rowCount++;
+  console.log(rowCount);
   var tableBody = document.getElementById('tblBody');
   var newRow = createAndAppend('tr', tableBody, '','',rowCount);
   var image = createAndAppend('td', newRow);
+  console.log(image);
   image.setAttribute('src', 'img/' + object.product + '.jpg');
   createAndAppend('td', newRow, object.product);
   createAndAppend('td', newRow, object.qty);
   var deleteButton = createAndAppend('td',newRow, '', '');
-  deleteButton.innerHTML = '<button id="deleteButton' + rowCount + '"  >Delete</button>';
+  createAndAppend('button', deleteButton, 'Delete','', 'deleteButton' + rowCount);
   deleteButton.addEventListener('click', removeRow);
 }
-addToCart();
-addToCart();
 
 var continueButton = document.getElementById('continueButton');
 continueButton.addEventListener('click',shoppingPage);
