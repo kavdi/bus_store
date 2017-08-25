@@ -1,3 +1,4 @@
+'use strict';
 
 var yourOrders = JSON.parse(localStorage.getItem('orders'));
 
